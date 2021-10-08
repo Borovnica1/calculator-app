@@ -14,10 +14,34 @@
 
     <title>Calculator app</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div class="attribution">Coded by <a href="#">Your Name Here</a>.</div>
+  <body class="theme-1">
+
+    <div class="calculator">
+      <header>
+        <h2>calc</h2>
+        <div class="themes">
+          <h6>THEME</h6>
+          <div>
+            <input type="range" min="1" max="3" value="1" class="themes__slider">
+          </div>
+        </div>
+      </header>
+
+      <div class="calculator__screen">
+        <input oninput="this.value=this.value.slice(0,this.maxLength)" type="number" placeholder="0" maxlength = "16">
+      </div>
+
+      <div class="calculator__keypad">
+        asdsad
+      </div>
+      <div class="attribution">Coded by <a href="https://github.com/Borovnica1">Nikola</a>.</div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
