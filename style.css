@@ -336,8 +336,6 @@ header {
 
 
 @media (max-width: 440px) {
-  body {
-  }
 
   .calculator {
     display: flex;
@@ -366,5 +364,46 @@ header {
   .calculator__key--del,
   .calculator__key--reset {
     font-size: 12px;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .theme-1 {
+    --main-background: var(--main-background-theme-3);
+    --toggle-keypad-background: var(--toggle-keypad-background-theme-3);
+    --screen-background: var(--toggle-keypad-background-theme-3);
+  
+    --del-reset-color: var(--del-reset-color-theme-3);
+    --del-reset-color-shadow: var(--del-reset-color-shadow-theme-3);
+    
+    --equals-color: var(--equals-color-theme-3);
+    --equals-color-shadow: var(--equals-color-shadow-theme-3);
+  
+    --keys-color: var(--keys-color-theme-3);
+    --keys-color-shadow: var(--keys-color-shadow-theme-3);
+  
+    --font-color-primary: var(--font-color-primary-theme-3);
+    --font-color-secondary: var(--font-color-primary-theme-3);
+    --font-color-tertiary: var(--font-color-tertiary-theme-3);
+  }
+  
+  .theme-3 {
+    --main-background: var(--main-background-theme-1);
+    --toggle-keypad-background: var(--toggle-keypad-background-theme-1);
+    --screen-background: var(--screen-background-theme-1);
+  
+    --del-reset-color: var(--del-reset-color-theme-1);
+    --del-reset-color-shadow: var(--del-reset-color-shadow-theme-1);
+    
+    --equals-color: var(--equals-color-theme-1);
+    --equals-color-shadow: var(--equals-color-shadow-theme-1);
+  
+    --keys-color: var(--keys-color-theme-1);
+    --keys-color-shadow: var(--keys-color-shadow-theme-1);
+  
+    --font-color-primary: var(--font-color-primary-theme-1);
+    --font-color-secondary: var(--font-color-secondary-theme-1);
+    --font-color-tertiary: var(--font-color-secondary-theme-1);
   }
 }
