@@ -1,0 +1,409 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+  font-weight: bold;
+}
+
+.attribution {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.attribution a {
+  color: rgb(var(--equals-color));
+}
+
+:root {
+  /* 
+    hsl(222, 26%, 31%)
+    hsl(223, 31%, 20%)
+    hsl(224, 36%, 15%)
+    
+    hsl(225, 21%, 49%)
+    hsl(224, 28%, 35%)
+    
+    hsl(6, 63%, 50%)
+    hsl(6, 70%, 34%)
+    
+    hsl(30, 25%, 89%)
+    hsl(28, 16%, 65%)
+
+    hsl(221, 14%, 31%)
+    hsl(0, 0%, 100%)
+  */
+
+  /* Theme 1 Colors */
+  --main-background-theme-1: 58, 71, 100;
+  --toggle-keypad-background-theme-1: 35, 44, 67;
+  --screen-background-theme-1: 24, 32, 52;
+
+  --del-reset-color-theme-1: 99, 112, 151;
+  --del-reset-color-shadow-theme-1: 64, 78, 114;
+  
+  --equals-color-theme-1: 208, 63, 47;
+  --equals-color-shadow-theme-1: 147, 38, 26;
+
+  --keys-color-theme-1: 234, 227, 220;
+  --keys-color-shadow-theme-1: 180, 165, 151;
+
+  --font-color-primary-theme-1: 68, 75, 90;
+  --font-color-secondary-theme-1: 255, 255, 255;
+
+  /* 
+    hsl(0, 0%, 90%)
+    hsl(0, 5%, 81%)
+    hsl(0, 0%, 93%)
+
+    hsl(185, 42%, 37%)
+    hsl(185, 58%, 25%)
+
+    hsl(25, 98%, 40%)
+    hsl(25, 99%, 27%)
+
+    hsl(45, 7%, 89%)
+    hsl(35, 11%, 61%)
+
+    hsl(60, 10%, 19%)
+    hsl(0, 0%, 100%)
+  */
+  /* Theme 2 Colors */
+  --main-background-theme-2: 230, 230, 230;
+  --toggle-keypad-background-theme-2: 209, 204, 204;
+  --screen-background-theme-2: 237, 237, 237;
+
+  --del-reset-color-theme-2: 55, 127, 134;
+  --del-reset-color-shadow-theme-2: 27, 95, 101;
+  
+  --equals-color-theme-2: 202, 85, 2;
+  --equals-color-shadow-theme-2: 137, 57, 1;
+
+  --keys-color-theme-2: 229, 228, 225;
+  --keys-color-shadow-theme-2: 166, 157, 145;
+
+  --font-color-primary-theme-2: 53, 53, 44;
+  --font-color-secondary-theme-2: 255, 255, 255;
+  /* 
+    hsl(268, 75%, 9%)
+    hsl(268, 71%, 12%)
+    
+    hsl(281, 89%, 26%)
+    hsl(285, 91%, 52%)
+    
+    hsl(176, 100%, 44%)
+    hsl(177, 92%, 70%)
+    
+    hsl(268, 47%, 21%)
+    hsl(290, 70%, 36%)
+
+    hsl(52, 100%, 62%)
+    hsl(198, 20%, 13%)
+    hsl(0, 0%, 100%)
+  */
+  /* Theme 3 Colors */
+  --main-background-theme-3: 22, 6, 40;
+  --toggle-keypad-background-theme-3: 24, 32, 52;
+
+  --del-reset-color-theme-3: 88, 7, 125;
+  --del-reset-color-shadow-theme-3: 188, 21, 244;
+  
+  --equals-color-theme-3:0, 224, 209;
+  --equals-color-shadow-theme-3: 108, 249, 242;
+
+  --keys-color-theme-3: 52, 28, 79;
+  --keys-color-shadow-theme-3: 135, 28, 156;
+
+  --font-color-primary-theme-3: 255, 229, 61;
+  --font-color-secondary-theme-3: 27, 36, 40;
+  --font-color-tertiary-theme-3: 255, 255, 255;
+
+  --font-size-numbers: 32px;
+}
+
+.theme-1 {
+  --main-background: var(--main-background-theme-1);
+  --toggle-keypad-background: var(--toggle-keypad-background-theme-1);
+  --screen-background: var(--screen-background-theme-1);
+
+  --del-reset-color: var(--del-reset-color-theme-1);
+  --del-reset-color-shadow: var(--del-reset-color-shadow-theme-1);
+  
+  --equals-color: var(--equals-color-theme-1);
+  --equals-color-shadow: var(--equals-color-shadow-theme-1);
+
+  --keys-color: var(--keys-color-theme-1);
+  --keys-color-shadow: var(--keys-color-shadow-theme-1);
+
+  --font-color-primary: var(--font-color-primary-theme-1);
+  --font-color-secondary: var(--font-color-secondary-theme-1);
+  --font-color-tertiary: var(--font-color-secondary-theme-1);
+}
+
+.theme-2 {
+  --main-background: var(--main-background-theme-2);
+  --toggle-keypad-background: var(--toggle-keypad-background-theme-2);
+  --screen-background: var(--screen-background-theme-2);
+
+  --del-reset-color: var(--del-reset-color-theme-2);
+  --del-reset-color-shadow: var(--del-reset-color-shadow-theme-2);
+  
+  --equals-color: var(--equals-color-theme-2);
+  --equals-color-shadow: var(--equals-color-shadow-theme-2);
+
+  --keys-color: var(--keys-color-theme-2);
+  --keys-color-shadow: var(--keys-color-shadow-theme-2);
+
+  --font-color-primary: var(--font-color-primary-theme-2);
+  --font-color-secondary: var(--font-color-primary-theme-2);
+  --font-color-tertiary: var(--font-color-secondary-theme-2);
+}
+
+.theme-3 {
+  --main-background: var(--main-background-theme-3);
+  --toggle-keypad-background: var(--toggle-keypad-background-theme-3);
+  --screen-background: var(--toggle-keypad-background-theme-3);
+
+  --del-reset-color: var(--del-reset-color-theme-3);
+  --del-reset-color-shadow: var(--del-reset-color-shadow-theme-3);
+  
+  --equals-color: var(--equals-color-theme-3);
+  --equals-color-shadow: var(--equals-color-shadow-theme-3);
+
+  --keys-color: var(--keys-color-theme-3);
+  --keys-color-shadow: var(--keys-color-shadow-theme-3);
+
+  --font-color-primary: var(--font-color-primary-theme-3);
+  --font-color-secondary: var(--font-color-primary-theme-3);
+  --font-color-tertiary: var(--font-color-tertiary-theme-3);
+}
+
+body {
+  background-color: rgb(var(--main-background));
+/*   display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.calculator {
+  max-width: 400px;
+  height: 600px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+header * , .calculator__screen *,
+::placeholder {
+  color: rgb(var(--font-color-secondary));
+}
+
+header, .calculator__screen, .calculator__keypad {
+  margin-top: 20px;
+}
+
+.themes {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.themes h6 {
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.themes div {
+  position: relative;
+  background-color: rgb(var(--toggle-keypad-background));
+  height: 20px;
+  border-radius: 50px;
+  width: 60px;
+}
+
+.themes div::after {
+  content: "1 2 3";
+  position: absolute;
+  top: -15px;
+  left: 11px;
+  white-space: nowrap;
+  letter-spacing: 4.2px;
+  font-size: 10px;
+}
+
+.themes__slider {
+  -webkit-appearance: none;
+  display: block;
+  width: 50px;
+  height: 100%;
+  background-color: rgb(var(--toggle-keypad-background));
+  border-radius: 50px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.themes__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px; 
+  height: 12px; 
+  border-radius: 50%;
+  background: rgb(var(--equals-color)); 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calculator__screen, .calculator__screen input {
+  background-color: rgb(var(--screen-background));
+}
+
+.calculator__screen, .calculator__keypad, .calculator__screen input {
+  border-radius: 10px;
+}
+
+.calculator__screen input {
+  display: block;
+  margin-left: auto;
+  width: 100%; 
+  text-align: end;
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-size: var(--font-size-numbers);
+}
+
+.calculator__keypad {
+  background-color: rgb(var(--toggle-keypad-background));
+  display: grid;
+  grid-template-rows: repeat(5, 40px);
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+.calculator__keypad * {
+  font-size: 20px;
+}
+
+.calculator__key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgb(var(--keys-color));
+  color: rgb(var(--font-color-primary));
+  cursor: pointer;
+  filter: drop-shadow(0px 3px 0px rgb(var(--keys-color-shadow)));
+}
+
+.calculator__key:hover {
+  filter: drop-shadow(0px 3px 0px rgb(var(--keys-color-shadow))) brightness(120%);
+}
+
+.calculator__key--del,
+.calculator__key--reset {
+  background-color: rgb(var(--del-reset-color));
+  color: rgb(var(--font-color-secondary));
+  filter: drop-shadow(0px 3px 0px rgb(var(--del-reset-color-shadow)));
+  font-size: 14px;
+}
+
+.calculator__key--del:hover,
+.calculator__key--reset:hover {
+  filter: drop-shadow(0px 3px 0px rgb(var(--del-reset-color-shadow))) brightness(120%);
+}
+
+.calculator__key--equals:hover {
+  filter: drop-shadow(0px 3px 0px rgb(var(--equals-color-shadow))) brightness(120%);
+}
+
+.calculator__key--reset,
+.calculator__key--equals {
+  grid-column: span 2;
+}
+
+
+.calculator__key--equals {
+  background-color: rgb(var(--equals-color));
+  color: rgb(var(--font-color-secondary));
+  filter: drop-shadow(0px 3px 0px rgb(var(--equals-color-shadow)));
+}
+
+
+@media (max-width: 440px) {
+
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    height: fit-content;
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .attribution {
+    order: -1;
+  }
+
+  :root {
+    --font-size-numbers: 28px;
+  }
+
+  .calculator__keypad * {
+    font-size: 16px;
+  }
+
+  .calculator__key--del,
+  .calculator__key--reset {
+    font-size: 12px;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .theme-1 {
+    --main-background: var(--main-background-theme-3);
+    --toggle-keypad-background: var(--toggle-keypad-background-theme-3);
+    --screen-background: var(--toggle-keypad-background-theme-3);
+  
+    --del-reset-color: var(--del-reset-color-theme-3);
+    --del-reset-color-shadow: var(--del-reset-color-shadow-theme-3);
+    
+    --equals-color: var(--equals-color-theme-3);
+    --equals-color-shadow: var(--equals-color-shadow-theme-3);
+  
+    --keys-color: var(--keys-color-theme-3);
+    --keys-color-shadow: var(--keys-color-shadow-theme-3);
+  
+    --font-color-primary: var(--font-color-primary-theme-3);
+    --font-color-secondary: var(--font-color-primary-theme-3);
+    --font-color-tertiary: var(--font-color-tertiary-theme-3);
+  }
+  
+  .theme-3 {
+    --main-background: var(--main-background-theme-1);
+    --toggle-keypad-background: var(--toggle-keypad-background-theme-1);
+    --screen-background: var(--screen-background-theme-1);
+  
+    --del-reset-color: var(--del-reset-color-theme-1);
+    --del-reset-color-shadow: var(--del-reset-color-shadow-theme-1);
+    
+    --equals-color: var(--equals-color-theme-1);
+    --equals-color-shadow: var(--equals-color-shadow-theme-1);
+  
+    --keys-color: var(--keys-color-theme-1);
+    --keys-color-shadow: var(--keys-color-shadow-theme-1);
+  
+    --font-color-primary: var(--font-color-primary-theme-1);
+    --font-color-secondary: var(--font-color-secondary-theme-1);
+    --font-color-tertiary: var(--font-color-secondary-theme-1);
+  }
+}

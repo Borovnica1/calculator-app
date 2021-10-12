@@ -14,10 +14,51 @@
 
     <title>Calculator app</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div class="attribution">Coded by <a href="#">Your Name Here</a>.</div>
+  <body class="theme-1">
+
+    <div class="calculator">
+      <header>
+        <h2>calc</h2>
+        <div class="themes">
+          <h6>THEME</h6>
+          <div>
+            <input type="range" min="1" max="3" value="1" class="themes__slider">
+          </div>
+        </div>
+      </header>
+
+      <div class="calculator__screen">
+        <input oninput="this.value=this.value.slice(0,this.maxLength)" type="text" placeholder="0" maxlength = "16" value="0">
+      </div>
+
+      <div class="calculator__keypad">
+        <div class="calculator__key calculator__key--7">7</div>
+        <div class="calculator__key calculator__key--8">8</div>
+        <div class="calculator__key calculator__key--9">9</div>
+        <div class="calculator__key calculator__key--del">DEL</div>
+        <div class="calculator__key calculator__key--4">4</div>
+        <div class="calculator__key calculator__key--5">5</div>
+        <div class="calculator__key calculator__key--6">6</div>
+        <div class="calculator__key calculator__key--plus">+</div>
+        <div class="calculator__key calculator__key--1">1</div>
+        <div class="calculator__key calculator__key--2">2</div>
+        <div class="calculator__key calculator__key--3">3</div>
+        <div class="calculator__key calculator__key--minus">-</div>
+        <div class="calculator__key calculator__key--dot">.</div>
+        <div class="calculator__key calculator__key--0">0</div>
+        <div class="calculator__key calculator__key--div">/</div>
+        <div class="calculator__key calculator__key--mul">x</div>
+        <div class="calculator__key calculator__key--reset">RESET</div>
+        <div class="calculator__key calculator__key--equals">=</div>
+      </div>
+      <div class="attribution">Coded by <a href="https://github.com/Borovnica1">Nikola</a>.</div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
